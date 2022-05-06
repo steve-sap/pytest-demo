@@ -16,3 +16,8 @@ class testClass(unittest.TestCase):
         model = Calculations()
         for row in testData():
             assert model.calculation1(row[0], row[1]) == row[2]
+
+
+if __name__ == '__main__':
+    import nose2
+    nose2.main()              
